@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard Dashboard</title>
+    <!-- Add Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gradient-to-b from-[#f0f7ff] to-white min-h-screen">
+    <!-- Header -->
+    <header class="p-4 sm:p-6 bg-white shadow-md">
+      <div
+        class="flex flex-col sm:flex-row items-center justify-between max-w-6xl mx-auto gap-4 sm:gap-0"
+      >
+        <div class="flex items-center gap-2">
+          <div
+            class="w-8 h-8 bg-blue-600 flex items-center justify-center rounded"
+          >
+            <span class="text-white font-bold">D</span>
+          </div>
+          <h1 class="text-xl sm:text-2xl font-bold text-gray-800">
+            Dev<span class="text-blue-600">Board</span>
+          </h1>
+        </div>
+        <div class="flex items-center gap-2 sm:gap-4">
+          <div class="flex items-center gap-1 sm:gap-2 text-gray-600">
+            <span class="text-blue-600 text-lg sm:text-xl">✔</span>
+            <span class="text-sm sm:text-base">23</span>
+          </div>
+          <button
+            class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full flex items-center gap-1 sm:gap-2 hover:from-blue-600 hover:to-blue-700 transition-colors"
+          >
+            <span class="text-lg sm:text-xl">⚙️</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main
+      class="max-w-6xl mx-auto p-4 sm:p-6 grid grid-cols-1 md:grid-cols-5 gap-4 sm:gap-6"
+    >
+      <!-- Left Section (Task Assigned, Date, and Task Cards) -->
+      <div class="grid grid-cols-1 md:grid-cols-1 gap-4 md:gap-6 col-span-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
+        >
+          <!-- Date Section 1-->
+          <div
+            class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col items-center justify-center text-center col-span-1"
+          >
+            <span class="text-blue-600 text-xl sm:text-2xl">✔</span>
+            <h2 class="text-base sm:text-lg font-semibold text-gray-800 mt-1">
+              Task Assigned
+            </h2>
+            <p class="text-gray-600 text-sm sm:text-base">05</p>
+          </div>
+
+          <!-- Date Section 2 -->
+          <div
+            class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col items-center justify-center text-center col-span-2"
+          >
+            <span class="text-gray-600 text-xl sm:text-2xl">📅</span>
+            <h2 class="text-base sm:text-lg font-semibold text-gray-800 mt-1">
+              Wed, Jul 28 2025
+            </h2>
+          </div>
+
+          <!-- Date Section 3 -->
+          <div
+            class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col items-center justify-center text-center col-span-1"
+          >
+            <span class="text-gray-600 text-xl sm:text-2xl">📅</span>
+            <h2 class="text-base sm:text-lg font-semibold text-gray-800 mt-1">
+              Wed, Jul 28 2025
+            </h2>
+          </div>
+        </div>
+        <!--defefe-->
+
+        <!-- Task Cards (3 Columns on Desktop, One on Mobile/Tablet) -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6"
+        >
+          <!-- Card 1: ShopEase -->
+          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
+            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+              ShopEase
+            </h3>
+            <h2
+              class="text-base sm:text-lg font-bold text-gray-800 mt-1 sm:mt-2"
+            >
+              Fix Mobile Button Issue
+            </h2>
+            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div
+              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+            >
+              <p class="text-gray-500">Deadline</p>
+              <p class="text-gray-500">21 March 2025</p>
+            </div>
+            <button
+              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
+            >
+              Completed
+            </button>
+          </div>
+
+          <!-- Card 2: CloudSync -->
+          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
+            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+              CloudSync
+            </h3>
+            <h2
+              class="text-base sm:text-lg font-bold text-gray-800 mt-1 sm:mt-2"
+            >
+              Add Dark Mode
+            </h2>
+            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+              Store the user's preference in localStorage, update CSS
+              variables...
+            </p>
+            <div
+              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+            >
+              <p class="text-gray-500">Deadline</p>
+              <p class="text-gray-500">21 March 2025</p>
+            </div>
+            <button
+              class="mt-2 sm:mt-3 bg-blue-600/50 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-600 transition-colors w-full text-xs sm:text-sm"
+            >
+              Completed
+            </button>
+          </div>
+
+          <!-- Card 3: SwiftPay -->
+          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
+            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+              SwiftPay
+            </h3>
+            <h2
+              class="text-base sm:text-lg font-bold text-gray-800 mt-1 sm:mt-2"
+            >
+              Optimize Home page
+            </h2>
+            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div
+              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+            >
+              <p class="text-gray-500">Deadline</p>
+              <p class="text-gray-500">21 March 2025</p>
+            </div>
+            <button
+              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
+            >
+              Completed
+            </button>
+          </div>
+
+          <!-- Card 4: Meta -->
+          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
+            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">Meta</h3>
+            <h2
+              class="text-base sm:text-lg font-bold text-gray-800 mt-1 sm:mt-2"
+            >
+              Add new emoji 😊
+            </h2>
+            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div
+              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+            >
+              <p class="text-gray-500">Deadline</p>
+              <p class="text-gray-500">21 March 2025</p>
+            </div>
+            <button
+              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
+            >
+              Completed
+            </button>
+          </div>
+
+          <!-- Card 5: Google LLC -->
+          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
+            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+              Google LLC
+            </h3>
+            <h2
+              class="text-base sm:text-lg font-bold text-gray-800 mt-1 sm:mt-2"
+            >
+              Integrate OpenAI API
+            </h2>
+            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div
+              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+            >
+              <p class="text-gray-500">Deadline</p>
+              <p class="text-gray-500">21 March 2025</p>
+            </div>
+            <button
+              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
+            >
+              Completed
+            </button>
+          </div>
+
+          <!-- Card 6: Glassdoor -->
+          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
+            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+              Glassdoor
+            </h3>
+            <h2
+              class="text-base sm:text-lg font-bold text-gray-800 mt-1 sm:mt-2"
+            >
+              Improve Job searching
+            </h2>
+            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+              Debug using Chrome DevTools, check for overlapping...
+            </p>
+            <div
+              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+            >
+              <p class="text-gray-500">Deadline</p>
+              <p class="text-gray-500">21 March 2025</p>
+            </div>
+            <button
+              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
+            >
+              Completed
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column (Activity Log Section - Dedicated Column) -->
+      <div class="col-span-1">
+        <!-- Activity Log Section -->
+        <div
+          class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col items-center justify-center text-center h-full"
+        >
+          <h2 class="text-base sm:text-lg font-semibold text-gray-800">
+            Activity Log
+          </h2>
+          <button
+            class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors text-sm sm:text-base"
+          >
+            Clear History
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
