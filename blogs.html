@@ -15,16 +15,16 @@
           <div
             class="w-8 h-8 bg-blue-600 flex items-center justify-center rounded"
           >
-            <span class="text-white font-bold">D</span>
+            <img src="assets/logo.png" alt="" />
           </div>
-          <h1 class="text-2xl font-bold text-gray-800">
-            Dev<span class="text-blue-600">Board</span>
+          <h1 class="text-xl sm:text-2xl font-extralight text-gray-800">
+            Dev<span class="font-extrabold">Board</span>
           </h1>
         </div>
         <button
           class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-colors"
         >
-          Back to Desk
+          <a href="index.html"> Back to Desk </a>
         </button>
       </div>
     </header>
@@ -36,28 +36,67 @@
       <!-- Blog Post 1 -->
       <div class="bg-white rounded-lg shadow-md p-4 mb-4">
         <h3 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
-          <span class="text-blue-600 text-xl">❓</span>
           Question-1: What are the different ways to select an element in the
           DOM?
         </h3>
         <p class="text-gray-600 mt-2 text-sm sm:text-base">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Tempora
-          tenetur illum illo hic, ipsum officia obcaecati culpa vel pariatur
-          repellendus quibusdam.
+          We can select elements using methods like getElementById,
+          getElementsByClassName, getElementsByTagName, querySelector, and
+          querySelectorAll. These methods allow us to target elements by their
+          ID, class, tag name, or CSS selector.
         </p>
       </div>
 
       <!-- Blog Post 2 -->
-      <div class="bg-white rounded-lg shadow-md p-4">
+      <div class="bg-white rounded-lg shadow-md p-4 mb-4">
         <h3 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
-          <span class="text-blue-600 text-xl">❓</span>
           Question-2: What is the difference between innerHTML, innerText, and
           textContent?
         </h3>
         <p class="text-gray-600 mt-2 text-sm sm:text-base">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Tempora
-          tenetur illum illo hic, ipsum officia obcaecati culpa vel pariatur
-          repellendus quibusdam.
+          innerHTML returns or sets the HTML content inside an element,
+          including tags. innerText returns only the visible text, ignoring
+          hidden elements and styles. textContent returns all text content,
+          including hidden elements, but excludes HTML tags.
+        </p>
+      </div>
+
+      <!-- Blog Post 3 -->
+      <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
+          Question-3: What is event delegation in the DOM?
+        </h3>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">
+          Event delegation is a technique where we attach an event listener to a
+          parent element to handle events for its child elements. This is useful
+          for dynamically added elements or to improve performance by reducing
+          the number of event listeners.
+        </p>
+      </div>
+
+      <!-- Blog Post 4 -->
+      <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
+          Question-4: What is event bubbling in the DOM?
+        </h3>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">
+          Event bubbling is the process where an event propagates from the
+          target element up through its ancestors in the DOM tree. This allows
+          parent elements to handle events triggered by their child elements.
+        </p>
+      </div>
+
+      <!-- Blog Post 5 -->
+      <div class="bg-white rounded-lg shadow-md p-4 mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 flex items-center gap-2">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h3>
+        <p class="text-gray-600 mt-2 text-sm sm:text-base">
+          Create: Use document.createElement('tagName'). <br />
+          Add: Use appendChild() or insertBefore() to add elements to the DOM.
+          <br />
+          Remove: Use removeChild() or remove() to delete elements from the DOM.
         </p>
       </div>
     </main>
