@@ -17,21 +17,22 @@
           <div
             class="w-8 h-8 bg-blue-600 flex items-center justify-center rounded"
           >
-            <span class="text-white font-bold">D</span>
+            <img src="assets/logo.png" alt="" />
           </div>
-          <h1 class="text-xl sm:text-2xl font-bold text-gray-800">
-            Dev<span class="text-blue-600">Board</span>
+          <h1 class="text-xl sm:text-2xl font-extralight text-gray-800">
+            Dev<span class="font-extrabold">Board</span>
           </h1>
         </div>
         <div class="flex items-center gap-2 sm:gap-4">
-          <div class="flex items-center gap-1 sm:gap-2 text-gray-600">
-            <span class="text-blue-600 text-lg sm:text-xl">✔</span>
-            <span class="text-sm sm:text-base">23</span>
+          <div class="bg-[#F4F7FF] p-2 rounded-2xl">
+            <div class="flex items-center gap-1 sm:gap-2 text-gray-600">
+              <img src="assets/checkbox.png" alt="" />
+              <span class="text-sm sm:text-base font-extrabold">23</span>
+            </div>
           </div>
-          <button
-            class="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full flex items-center gap-1 sm:gap-2 hover:from-blue-600 hover:to-blue-700 transition-colors"
-          >
-            <span class="text-lg sm:text-xl">⚙️</span>
+
+          <button class="bg-[#F4F7FF] p-1 rounded-2xl">
+            <img src="assets/theme-btn.png" alt="" />
           </button>
         </div>
       </div>
@@ -48,32 +49,40 @@
         >
           <!-- Date Section 1-->
           <div
-            class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col items-center justify-center text-center col-span-1"
+            class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex items-center justify-center text-center col-span-1"
           >
-            <span class="text-blue-600 text-xl sm:text-2xl">✔</span>
-            <h2 class="text-base sm:text-lg font-semibold text-gray-800 mt-1">
-              Task Assigned
-            </h2>
-            <p class="text-gray-600 text-sm sm:text-base">05</p>
+            <img src="assets/checkbox.png" alt="" />
+            <div class="flex-col text-left pl-4">
+              <h2
+                class="sm:text-lg font-semibold text-gray-800 mt-1 text-base md:text-xs"
+              >
+                Task Assigned
+              </h2>
+              <p class="text-gray-600 text-sm sm:text-base font-extrabold">
+                05
+              </p>
+            </div>
           </div>
 
           <!-- Date Section 2 -->
           <div
-            class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col items-center justify-center text-center col-span-2"
+            class="bg-gradient-to-br from-[#3752FD] to-[#9BA8F8] rounded-lg shadow-md p-3 sm:p-4 flex items-center justify-center text-center col-span-2"
           >
-            <span class="text-gray-600 text-xl sm:text-2xl">📅</span>
-            <h2 class="text-base sm:text-lg font-semibold text-gray-800 mt-1">
-              Wed, Jul 28 2025
+            <img src="assets/board.png" alt="" />
+            <h2 class="text-base sm:text-lg font-semibold text-white mt-1">
+              Discover Something <br />
+              New Today!
             </h2>
           </div>
 
           <!-- Date Section 3 -->
           <div
-            class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col items-center justify-center text-center col-span-1"
+            class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex items-center justify-center text-left col-span-1"
           >
-            <span class="text-gray-600 text-xl sm:text-2xl">📅</span>
+            <img src="assets/calender.png" alt="" class="pr-3" />
             <h2 class="text-base sm:text-lg font-semibold text-gray-800 mt-1">
-              Wed, Jul 28 2025
+              Wed , <br />
+              Jul 28 2025
             </h2>
           </div>
         </div>
@@ -84,8 +93,10 @@
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6"
         >
           <!-- Card 1: ShopEase -->
-          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
-            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-3 sm:p-4">
+            <h3
+              class="text-xs sm:text-sm font-semibold text-gray-500 bg-white inline p-1.5 rounded-xl"
+            >
               ShopEase
             </h3>
             <h2
@@ -93,25 +104,33 @@
             >
               Fix Mobile Button Issue
             </h2>
-            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+            <p
+              class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm bg-white p-1 rounded-lg"
+            >
               Debug using Chrome DevTools, check for overlapping...
             </p>
-            <div
-              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
-            >
-              <p class="text-gray-500">Deadline</p>
-              <p class="text-gray-500">21 March 2025</p>
+            <div class="flex gap-3">
+              <div
+                class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+              >
+                <p class="text-gray-500">
+                  Deadline <br />
+                  <span class="font-bold">21 March 2025</span>
+                </p>
+              </div>
+              <button
+                class="md:mt-6 sm:mt-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors w-2/4 text-xs sm:text-sm h-8"
+              >
+                Completed
+              </button>
             </div>
-            <button
-              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
-            >
-              Completed
-            </button>
           </div>
 
           <!-- Card 2: CloudSync -->
-          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
-            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-3 sm:p-4">
+            <h3
+              class="text-xs sm:text-sm font-semibold text-gray-500 bg-white inline p-1.5 rounded-xl"
+            >
               CloudSync
             </h3>
             <h2
@@ -119,26 +138,33 @@
             >
               Add Dark Mode
             </h2>
-            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
-              Store the user's preference in localStorage, update CSS
-              variables...
+            <p
+              class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm bg-white p-1 rounded-lg"
+            >
+              DStore the user's preference in localStorage, variables...
             </p>
-            <div
-              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
-            >
-              <p class="text-gray-500">Deadline</p>
-              <p class="text-gray-500">21 March 2025</p>
+            <div class="flex gap-3">
+              <div
+                class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+              >
+                <p class="text-gray-500">
+                  Deadline <br />
+                  <span class="font-bold">22 March 2025</span>
+                </p>
+              </div>
+              <button
+                class="md:mt-6 sm:mt-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors w-2/4 text-xs sm:text-sm h-8"
+              >
+                Completed
+              </button>
             </div>
-            <button
-              class="mt-2 sm:mt-3 bg-blue-600/50 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-600 transition-colors w-full text-xs sm:text-sm"
-            >
-              Completed
-            </button>
           </div>
 
           <!-- Card 3: SwiftPay -->
-          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
-            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-3 sm:p-4">
+            <h3
+              class="text-xs sm:text-sm font-semibold text-gray-500 bg-white inline p-1.5 rounded-xl"
+            >
               SwiftPay
             </h3>
             <h2
@@ -146,49 +172,67 @@
             >
               Optimize Home page
             </h2>
-            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+            <p
+              class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm bg-white p-1 rounded-lg"
+            >
               Debug using Chrome DevTools, check for overlapping...
             </p>
-            <div
-              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
-            >
-              <p class="text-gray-500">Deadline</p>
-              <p class="text-gray-500">21 March 2025</p>
+            <div class="flex gap-3">
+              <div
+                class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+              >
+                <p class="text-gray-500">
+                  Deadline <br />
+                  <span class="font-bold">20 March 2025</span>
+                </p>
+              </div>
+              <button
+                class="md:mt-6 sm:mt-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors w-2/4 text-xs sm:text-sm h-8"
+              >
+                Completed
+              </button>
             </div>
-            <button
-              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
-            >
-              Completed
-            </button>
           </div>
 
           <!-- Card 4: Meta -->
-          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
-            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">Meta</h3>
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-3 sm:p-4">
+            <h3
+              class="text-xs sm:text-sm font-semibold text-gray-500 bg-white inline p-1.5 rounded-xl"
+            >
+              Meta
+            </h3>
             <h2
               class="text-base sm:text-lg font-bold text-gray-800 mt-1 sm:mt-2"
             >
               Add new emoji 😊
             </h2>
-            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+            <p
+              class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm bg-white p-1 rounded-lg"
+            >
               Debug using Chrome DevTools, check for overlapping...
             </p>
-            <div
-              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
-            >
-              <p class="text-gray-500">Deadline</p>
-              <p class="text-gray-500">21 March 2025</p>
+            <div class="flex gap-3">
+              <div
+                class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+              >
+                <p class="text-gray-500">
+                  Deadline <br />
+                  <span class="font-bold">21 March 2025</span>
+                </p>
+              </div>
+              <button
+                class="md:mt-6 sm:mt-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors w-2/4 text-xs sm:text-sm h-8"
+              >
+                Completed
+              </button>
             </div>
-            <button
-              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
-            >
-              Completed
-            </button>
           </div>
 
           <!-- Card 5: Google LLC -->
-          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
-            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-3 sm:p-4">
+            <h3
+              class="text-xs sm:text-sm font-semibold text-gray-500 bg-white inline p-1.5 rounded-xl"
+            >
               Google LLC
             </h3>
             <h2
@@ -196,25 +240,33 @@
             >
               Integrate OpenAI API
             </h2>
-            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+            <p
+              class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm bg-white p-1 rounded-lg"
+            >
               Debug using Chrome DevTools, check for overlapping...
             </p>
-            <div
-              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
-            >
-              <p class="text-gray-500">Deadline</p>
-              <p class="text-gray-500">21 March 2025</p>
+            <div class="flex gap-3">
+              <div
+                class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+              >
+                <p class="text-gray-500">
+                  Deadline <br />
+                  <span class="font-bold">21 March 2025</span>
+                </p>
+              </div>
+              <button
+                class="md:mt-6 sm:mt-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors w-2/4 text-xs sm:text-sm h-8"
+              >
+                Completed
+              </button>
             </div>
-            <button
-              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
-            >
-              Completed
-            </button>
           </div>
 
           <!-- Card 6: Glassdoor -->
-          <div class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4">
-            <h3 class="text-xs sm:text-sm font-semibold text-gray-500">
+          <div class="bg-[#F4F7FF] rounded-lg shadow-md p-3 sm:p-4">
+            <h3
+              class="text-xs sm:text-sm font-semibold text-gray-500 bg-white inline p-1.5 rounded-xl"
+            >
               Glassdoor
             </h3>
             <h2
@@ -222,20 +274,26 @@
             >
               Improve Job searching
             </h2>
-            <p class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm">
+            <p
+              class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm bg-white p-1 rounded-lg"
+            >
               Debug using Chrome DevTools, check for overlapping...
             </p>
-            <div
-              class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
-            >
-              <p class="text-gray-500">Deadline</p>
-              <p class="text-gray-500">21 March 2025</p>
+            <div class="flex gap-3">
+              <div
+                class="mt-2 sm:mt-3 flex items-center justify-between text-xs sm:text-sm"
+              >
+                <p class="text-gray-500">
+                  Deadline <br />
+                  <span class="font-bold">21 March 2025</span>
+                </p>
+              </div>
+              <button
+                class="md:mt-6 sm:mt-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors w-2/4 text-xs sm:text-sm h-8"
+              >
+                Completed
+              </button>
             </div>
-            <button
-              class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors w-full text-xs sm:text-sm"
-            >
-              Completed
-            </button>
           </div>
         </div>
       </div>
@@ -244,16 +302,29 @@
       <div class="col-span-1">
         <!-- Activity Log Section -->
         <div
-          class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col items-center justify-center text-center h-full"
+          class="bg-white/70 rounded-lg shadow-md p-3 sm:p-4 flex flex-col text-center items-center h-full"
         >
-          <h2 class="text-base sm:text-lg font-semibold text-gray-800">
-            Activity Log
-          </h2>
+          <div class="flex gap-3">
+            <img src="assets/activity.png" alt="" class="w-1/ h-auto" />
+            <h2 class="text-base sm:text-lg font-semibold text-gray-800">
+              Activity Log
+            </h2>
+          </div>
           <button
-            class="mt-2 sm:mt-3 bg-blue-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-blue-700 transition-colors text-sm sm:text-base"
+            class="md:mt-6 sm:mt-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white rounded-lg shadow-md hover:shadow-lg hover:from-blue-600 hover:to-blue-800 transition-all duration-300 w-full text-base sm:text-sm h-10"
           >
             Clear History
           </button>
+          <p
+            class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm bg-[#F4F7FF] p-1 rounded-lg"
+          >
+            Debug using Chrome DevTools, check for overlapping...
+          </p>
+          <p
+            class="text-gray-600 mt-1 sm:mt-2 text-xs sm:text-sm bg-[#F4F7FF] p-1 rounded-lg"
+          >
+            Debug using Chrome DevTools, check for overlapping...
+          </p>
         </div>
       </div>
     </main>
